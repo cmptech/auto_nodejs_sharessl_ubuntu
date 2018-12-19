@@ -24,6 +24,5 @@ RUN . /node_env.sh \
 && rm -rf /var/lib/apt/lists/ \
 && /$NODE_VERSION/bin/node -v
 
-# docker build -t cmptech/nodejs_sharessl_ubuntu:18.04
-# docker run -ti cmptech/nodejs_sharessl_ubuntu:18.04 
+# docker build -t cmptech/nodejs_sharessl_ubuntu:18.04 .
 # docker run -ti cmptech/auto_ubuntu1804_nodejs_sharessl bash -c 'source /node_env.sh && /$NODE_VERSION/bin/node -e "console.log(os.arch(),os.platform(),process.versions.modules,process.versions)"'
