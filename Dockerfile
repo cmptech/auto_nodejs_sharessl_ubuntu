@@ -1,7 +1,8 @@
 # https://hub.docker.com/u/cmptech/nodejs_sharessl_ubuntu:18.04
 
-#FROM ubuntu:18.04
-FROM ailispaw/ubuntu-essential:18.04
+#FROM ubuntu:latest
+#FROM ailispaw/ubuntu-essential:latest
+FROM cmptech/zt:latest
 
 Maintainer Wanjo Chan ( http://github.com/wanjochan/ )
 
