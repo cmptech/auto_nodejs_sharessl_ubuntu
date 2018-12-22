@@ -21,7 +21,7 @@ RUN . /node_env.sh \
 && make install \
 && cd /root/ \
 && rm -Rf ${NODE_VERSION}* \
-&& apt remove -y python-pip python \
+&& apt remove -y python* \
 && apt autoremove -y \
 && rm -rf /var/lib/apt/lists/ \
 && /$NODE_VERSION/bin/node -v
