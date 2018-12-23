@@ -2,7 +2,7 @@
 
 #FROM ubuntu:latest
 #FROM ailispaw/ubuntu-essential:latest
-FROM cmptech/zt:latest
+FROM cmptech/zt:16.04
 
 Maintainer Wanjo Chan ( http://github.com/wanjochan/ )
 
