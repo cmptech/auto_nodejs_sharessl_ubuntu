@@ -13,7 +13,7 @@ RUN apt update && apt install -y wget libssl-dev
 #link 16.04 with node 8.X w/ openssl 1.0.X
 RUN NODE_VERSION_NUM=`wget -qO- https://nodejs.org/dist/latest-v8.x/ | sed -nE 's|.*>node-(.*)\.pkg</a>.*|\1|p'` \
 && echo export NODE_VERSION_NUM=$NODE_VERSION_NUM > /node_env.sh \
-&& echo export NODE_VERSION=$NODE_VERSION_NUM >> /node_env.sh
+&& echo export NODE_VERSION=node-$NODE_VERSION_NUM >> /node_env.sh
 
 RUN . /node_env.sh \
 && apt install -y python-pip \
