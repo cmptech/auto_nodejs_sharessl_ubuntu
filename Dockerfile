@@ -11,7 +11,7 @@ RUN apt update && apt install -y wget libssl-dev
 #RUN echo export NODE_VERSION=node-`wget -qO- https://nodejs.org/dist/latest/ | sed -nE 's|.*>node-(.*)\.pkg</a>.*|\1|p'` > /node_env.sh
 #https://nodejs.org/en/download/ -> LTS
 RUN echo export NODE_VERSION_NUM=10.14.2 > /node_env.sh
-RUN echo export NODE_VERSION=node-$NODE_VERSION_NUM >> /node_env.sh
+RUN echo export NODE_VERSION=node-10.14.2 >> /node_env.sh
 
 RUN . /node_env.sh \
 && apt install -y python-pip \
